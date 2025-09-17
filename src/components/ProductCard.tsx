@@ -1,9 +1,9 @@
 "use client"; // 👈 add this at the very top
 
 import Link from "next/link";
-import { useCart } from "@/context/cartContext";
+import { Product, useCart } from "@/context/cartContext";
 
-export default function ProductCard({ product }: { product: any }) {
+export default function ProductCard({ product }: { product: Product }) {
   const { addToCart } = useCart();
 
   if (!product) return null;

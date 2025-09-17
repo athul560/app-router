@@ -9,7 +9,7 @@ export default function Navbar() {
   return (
     <nav className="bg-black shadow-md sticky top-0 z-50">
       <div className="max-w-6xl mx-auto flex items-center justify-between p-4">
-        <Link href="/" className="text-2xl font-bold text-blue-600">HelCart</Link>
+        <Link href="/" className="text-2xl font-bold text-white-600">HelCart</Link>
         <div className="flex gap-6">
           <Link href="/">Home</Link>
           <Link href="/products">Products</Link>

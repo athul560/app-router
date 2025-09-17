@@ -1,8 +1,8 @@
 "use client";
 
-import { useCart } from "@/context/cartContext";
+import { Product, useCart } from "@/context/cartContext";
 
-export default function ProductDetailClient({ product }: { product: any }) {
+export default function ProductDetailClient({ product }: { product: Product }) {
   const { addToCart } = useCart();
 
   if (!product) {
