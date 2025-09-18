@@ -11,7 +11,7 @@ export default function ProductDetailClient({ product }: { product: Product }) {
 
   return (
     <div className="max-w-5xl mx-auto p-6 grid md:grid-cols-2 gap-8">
-      {/* Product Image */}
+     
       <div className="flex justify-center items-center">
         <img
           src={product.thumbnail}
@@ -20,7 +20,7 @@ export default function ProductDetailClient({ product }: { product: Product }) {
         />
       </div>
 
-      {/* Product Info */}
+     
       <div>
         <h1 className="text-3xl font-bold">{product.title}</h1>
         <p className="text-gray-600 mt-4">{product.description}</p>

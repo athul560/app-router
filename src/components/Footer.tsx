@@ -6,7 +6,7 @@ export default function Footer() {
   return (
     <footer className="bg-gray-900 text-gray-300 mt-12">
       <div className="max-w-6xl mx-auto px-6 py-10 grid md:grid-cols-4 gap-8">
-        {/* About */}
+        
         <div>
           <h2 className="text-white text-xl font-bold mb-4">MyShop</h2>
           <p className="text-gray-400">
@@ -14,7 +14,7 @@ export default function Footer() {
           </p>
         </div>
 
-        {/* Quick Links */}
+        
         <div>
           <h3 className="text-white font-semibold mb-4">Quick Links</h3>
           <ul className="space-y-2">
@@ -33,7 +33,7 @@ export default function Footer() {
           </ul>
         </div>
 
-        {/* Customer Service */}
+       
         <div>
           <h3 className="text-white font-semibold mb-4">Customer Service</h3>
           <ul className="space-y-2">
@@ -49,7 +49,7 @@ export default function Footer() {
           </ul>
         </div>
 
-        {/* Contact */}
+        
         <div>
           <h3 className="text-white font-semibold mb-4">Contact Us</h3>
           <p className="text-gray-400">123 Main Street, City, Country</p>

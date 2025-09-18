@@ -4,7 +4,7 @@ import { useCart } from "@/context/cartContext";
 export default function CartPage() {
   const { cart, addToCart, removeFromCart } = useCart();
 
-  // Calculate total
+ 
   const total = cart.reduce(
     (sum, item) => sum + item.price * (item.quantity || 1),
     0
@@ -23,7 +23,6 @@ export default function CartPage() {
               key={item.id}
               className="flex items-center justify-between border-b pb-4"
             >
-              {/* Product Info */}
               <div className="flex items-center space-x-4">
                 <img
                   src={item.thumbnail}
@@ -39,7 +38,7 @@ export default function CartPage() {
                 </div>
               </div>
 
-              {/* Quantity Controls */}
+            
               <div className="flex items-center space-x-2">
                 <button
                   onClick={() => removeFromCart(item.id, true)} // decrease
@@ -56,7 +55,7 @@ export default function CartPage() {
                 </button>
               </div>
 
-              {/* Remove */}
+             
               <button
                 onClick={() => removeFromCart(item.id)}
                 className="text-red-500 ml-4"
@@ -66,7 +65,7 @@ export default function CartPage() {
             </div>
           ))}
 
-          {/* Cart Total */}
+          
           <div className="text-right font-bold text-xl mt-6">
             Total: ${total.toFixed(2)}
           </div>
